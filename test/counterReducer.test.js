@@ -26,7 +26,16 @@ describe('counterReducer', () => {
   });
 
   it('should increment state.count by one when passed an increment object', () => {
+    // save result of invoking reducer with INCREMENT_COUNTER action
     const result = counterReducer(defaultState, { type: 'INCREMENT_COUNTER' });
+    // assert state.count is incremented by one
     expect(result).toEqual({ count: 23 });
+  });
+
+  it('should decrement state.count by one when passed a decrement object', () => {
+    // save result of invoking reducer with DECREMENT_COUNTER action
+    const result = counterReducer(defaultState, { type: 'DECREMENT_COUNTER' });
+    // assert state.count is decremented by one
+    expect(result).toEqual({ count: 21 });
   });
 });
