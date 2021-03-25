@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest test",
+    "test": "jest test --verbose",
     "dev": "webpack serve --hot"
   },
   "repository": {
