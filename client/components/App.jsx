@@ -5,13 +5,13 @@ import Counter from './Counter.jsx';
 
 function App() {
   return (
-    <>
-      <div style={styles.container}>
-        <Buttons></Buttons>
-        <Counter></Counter>
+    <div style={styles.container} className='App'>
+      <Buttons></Buttons>
+      <Counter></Counter>
+      <div style={styles.footer}>
+        {/*OMG LOOK AT HOT RELOADING WOWEEEE!!!!!!!*/}
       </div>
-      <div style={styles.footer}>OMG LOOK AT HOT RELOADING!!!!!!!</div>
-    </>
+    </div>
   );
 }
 
