@@ -34,6 +34,7 @@ function Button(props) {
           ? { ...styles.button, ...styles.activeButton }
           : { ...styles.button, ...styles.inactiveButton }
       }
+      className='button'
       onClick={() => changeColor(color)}
     >
       {color}
