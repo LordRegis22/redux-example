@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest test --verbose",
+    "test": "jest test --verbose --watch",
     "dev": "webpack serve --hot"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,8 +24,8 @@
   },
   "homepage": "https://github.com/LordRegis22/redux-example#readme",
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5"
   },
@@ -29,6 +34,8 @@
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "jest": "^26.6.3",
     "react-hot-loader": "^4.13.0",
     "redux-devtools-extension": "^2.13.9",
