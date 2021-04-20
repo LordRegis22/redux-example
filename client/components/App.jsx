@@ -8,7 +8,7 @@ function App() {
     <div style={styles.container} className='App'>
       <Buttons></Buttons>
       <Counter></Counter>
-      <div style={styles.footer}>
+      <div style={styles.footer} className='hotReloading'>
         {/*OMG LOOK AT HOT RELOADING WOWEEEE!!!!!!!*/}
       </div>
     </div>
