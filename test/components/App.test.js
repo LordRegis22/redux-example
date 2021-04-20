@@ -1,6 +1,9 @@
 import React from 'react';
-import { shallow, configure } from 'enzyme';
+import { shallow, render, configure } from 'enzyme';
+import { Provider } from 'react-redux';
+import store from '../../client/store';
 import App from '../../client/components/App';
+import Buttons from '../../client/components/Buttons';
 import Adapter from 'enzyme-adapter-react-16';
 
 //configure({ adapter: new Adapter() });
@@ -13,5 +16,9 @@ describe('App component', () => {
     expect(shallowApp.hasClass('App')).toBe(true);
     // assert it has three children
     expect(shallowApp.children().length).toBe(3);
+    // assert three children are Buttons, Counter and a div for hot reloading
+    console.log(shallowApp.children());
+
+    //expect(shallowApp.dive().find(Buttons)).toBe(true);
   });
 });
