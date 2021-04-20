@@ -21,4 +21,10 @@ describe('App component', () => {
     // assert it has three children
     expect(shallowApp.children().length).toBe(3);
   });
+  it('should render a Buttons, Counter, and HMR div component as children', () => {
+    // assert three children are Buttons, Counter and a div for hot reloading
+    expect(shallowApp.find(Buttons)).toBeTruthy();
+    expect(shallowApp.find(Counter)).toBeTruthy();
+    expect(shallowApp.find('.hotReloading')).toHaveLength(1);
+  });
 });
