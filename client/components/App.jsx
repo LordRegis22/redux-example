@@ -9,7 +9,7 @@ function App() {
       <Buttons></Buttons>
       <Counter></Counter>
       <div style={styles.footer} className='hotReloading'>
-        {/*OMG LOOK AT HOT RELOADING WOWEEEE!!!!!!!*/}
+        ZOMG LOOK AT HOT RELOADING!
       </div>
     </div>
   );
