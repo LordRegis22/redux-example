@@ -1,8 +1,8 @@
 import * as actions from '../constants/actionTypes';
 
 const initialState = {
-  colors: ['chartreuse', 'cyan', 'magenta', 'orange', 'blue'],
-  currentColor: 'orange',
+  colors: ['chartreuse', 'cyan', 'magenta', 'orange'],
+  currentColor: 'chartreuse',
   clickedColors: [],
 };
 
