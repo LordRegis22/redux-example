@@ -8,15 +8,35 @@ function App() {
     <div style={styles.container} className='App'>
       <Buttons></Buttons>
       <Counter></Counter>
-      <div style={styles.footer} className='hotReloading'>
+      {/* <div style={styles.footer} className='hotReloading'>
         ZOMG LOOK AT HOT RELOADING!
-      </div>
+      </div> */}
     </div>
   );
 }
 
 export default hot(App);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+//
+//
 const styles = {
   container: {
     display: 'flex',
